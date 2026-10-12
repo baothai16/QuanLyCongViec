@@ -3,7 +3,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
-
+    <Button android:id="@+id/btnChinhSua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chinh sua" />
     <TextView android:id="@+id/tvTenCongViec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
