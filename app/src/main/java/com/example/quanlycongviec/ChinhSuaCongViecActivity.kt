@@ -19,16 +19,5 @@ class ChinhSuaCongViecActivity : AppCompatActivity() {
             insets
         }
     }
-    private lateinit var tvTenCongViec: TextView
-    private lateinit var tvMoTa: TextView
 
-    private val boChinhSua = registerForActivityResult(
-        ActivityResultContracts.StartActivityForResult()
-    ) { ketQua ->
-        if (ketQua.resultCode == RESULT_OK) {
-            val duLieu = ketQua.data
-            tvTenCongViec.text = duLieu?.getStringExtra("TEN_MOI") ?: ""
-            tvMoTa.text = duLieu?.getStringExtra("MO_TA_MOI") ?: ""
-        }
-    }
 }
